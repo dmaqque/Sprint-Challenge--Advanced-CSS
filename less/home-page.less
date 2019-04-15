@@ -64,17 +64,17 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
+    justify-content: column;
 
     @media @phone {
-        display: flex;
-        flex-direction: column-reverse;
+      width: 100%;
+      flex-direction: column-reverse;
     }
 
     .walk-text {
       width: 50%;
       @media @phone {
-        width: 100%;
+          width: 100%;
       }
 
       h3 {
@@ -87,24 +87,21 @@
 
       .btn button {
         .btn-mixin (@ebony-clay; 120px; 40px);
+        .my-hover-mixin();
       }
       @media @phone {
-        width: 100px;
+        width: 90%;
       }
       }
     }
 
     .walk-img {
-      width: 46%;
-      margin-left: 4%;
+        width: 46%;
+        margin-left: 4%;
       @media @phone {
         width: 90%;
       }
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        
       }
     }
     
