@@ -1,1 +1,28 @@
 // Mixins Here
+// Button
+.btn-mixin (@color; @width; @height) {
+    margin: 0 10px 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    background-color: @color;
+    width: @width;
+    height: @height;
+    color: white;
+}
+.my-hover-mixin() {
+    button:hover {
+      border: 1px solid @ebony-clay;
+      background-color: white;
+      color: @ebony-clay;
+    }
+  }
+.phone-img-mixin(@width; @height) {
+    width: @width;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: @height;
+}
